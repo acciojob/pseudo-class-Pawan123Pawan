@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-   p{
-	   color:rgb(0, 0, 0);
-   }
-    p:first-child span{
-      color: rgb(255, 0, 0);
-      text-transform: capitalize;
-    }
-  </style>
-</head>
-<body>
-  <main>
-	  <div>
-	    <p><span>befor Element</span> This the main container element<span> after Element</span></p>
-	  </div>	  
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::after {
+        content: " befor element";
+        color: red;
+        text-transform: capitalize;
+      }
+      p::before {
+        content: "after element ";
+        color: red;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <main>
+        <p>This is the main container element</p>
+      </main>
+    </div>
+  </body>
 </html>
