@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-     
-      div::after {
-        content: "after element";
-        color: red;
-        text-transform: capitalize;
-      }
-      div::before {
-        content: "before element ";
-        color: red;
-        text-transform: capitalize;
-      }
-    </style>
-  </head>
-  <body>
-    <div>This is the main container element</div>
-  </body>
+
+<html>
+
+<head>
+	<style>
+		div::before {
+    content: "Before Element";
+    color: red;
+}
+div::after {
+	content: "After Element";
+	color: red;
+}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div>This is the main container element</div>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
 </html>
