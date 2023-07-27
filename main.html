@@ -6,17 +6,19 @@
     <title>Document</title>
     <style>
      
-      div::before {
-         content: "Before Element";
-         color: red;
+      div::after {
+        content: " after element";
+        color: rgb(255, 0, 0);
+        text-transform: capitalize;
       }
-     div::after {
-	   content: " After Element";
-	   color: red;
-       }
+      div::before {
+        content: " before element ";
+        color: rgb(255, 0, 0);
+        text-transform: capitalize;
+      }
     </style>
   </head>
   <body>
-    <div>This is the main container element </div>
+    <div>This is the main container element</div>
   </body>
 </html>
